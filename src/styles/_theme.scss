@@ -1,0 +1,22 @@
+@use './variables' as *;
+
+:root {
+    --page-background: #{$light-page-background};
+    --page-text: #{$light-page-text};
+    --page-accent: #{$light-page-accent};
+    --nav-back-color: #{$light-nav-back-color};
+    --page-border: #{$light-page-border};
+    --page-panel: #{$light-page-panel};
+}
+
+#shell.theme-dark {
+  --page-background: #{$dark-page-background};
+  --page-text: #{$dark-page-text};
+  --page-border: #{$dark-page-border};
+  --page-panel: #{$dark-page-panel};
+  --page-card: #{$dark-page-card};
+  --page-accent: #{$dark-page-accent};
+  --page-button: #{$dark-page-button};
+  --page-button-text: #{$dark-page-button-text};
+  --nav-back-color: #{$dark-nav-back-color};
+}
