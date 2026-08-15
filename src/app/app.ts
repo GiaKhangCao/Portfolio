@@ -18,7 +18,9 @@ export class App {
     const icons: [string, string][] = [
       ['Angular', 'assets/Angular.svg'],
       ['Blazor', 'assets/Blazor.svg'],
+      ['C', 'assets/C.svg'],
       ['C#', 'assets/C%23%20(CSharp).svg'],
+      ['ClaudeCode', 'assets/claude-code.svg'],
     ]
 
     icons.forEach(([name, url]) =>
