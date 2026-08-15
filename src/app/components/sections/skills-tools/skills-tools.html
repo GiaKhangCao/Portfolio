@@ -1,1 +1,9 @@
-<p>skills-tools works!</p>
+<section class="skill-section">
+    <h2>Tools</h2>
+
+    <div>
+        @for (skillItem of skills; track skillItem.name) {
+            <app-badge [skill] = "skillItem"></app-badge>
+        }
+    </div>
+</section>
