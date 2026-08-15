@@ -1,5 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
 import { Header } from "./components/header/header";
 import { Footer } from "./components/footer/footer";
 import { MatIconRegistry } from '@angular/material/icon';
@@ -14,7 +15,10 @@ import { DomSanitizer } from '@angular/platform-browser';
 export class App {
   protected readonly title = signal('portfolio');
 
-  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer, viewportScroller: ViewportScroller) {
+    // Offsets anchor scrolling so section titles clear the sticky header instead of hiding behind it.
+    viewportScroller.setOffset([0, 80]);
+
     const icons: [string, string][] = [
       ['Angular', 'assets/Angular.svg'],
       ['Blazor', 'assets/Blazor.svg'],
