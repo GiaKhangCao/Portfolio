@@ -1,0 +1,8 @@
+<div class="skill-item">
+    @if (skill.iconName) {
+    <mat-icon [svgIcon]="skill.iconName"></mat-icon>
+    } @else {
+    <div class="mono-badge">{{ skill.monogram }}</div>
+    }
+    <span>{{ skill.name }}</span>
+</div>
