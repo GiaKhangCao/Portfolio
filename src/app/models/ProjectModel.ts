@@ -1,6 +1,6 @@
 export interface ProjectModel {
     name: string,
     description: string,
-    usingTools: string,
+    usingTools: string[],
     date: string,
 }
