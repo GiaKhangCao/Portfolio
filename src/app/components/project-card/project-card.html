@@ -1,1 +1,26 @@
-<p>project-card works!</p>
+<mat-card class="project-card">
+    <mat-card-header>
+        <h3>
+            {{project.name}}
+        </h3>
+        <p>
+            {{project.date}}
+        </p>
+    </mat-card-header>
+
+    <mat-card-content>
+        <div>
+            <p>
+                {{project.description}}
+            </p>
+        </div>
+
+        <div>
+            @for (tool of project.usingTools; track $index) {
+                <span>
+                    {{tool}}
+                </span>
+            }
+        </div>
+    </mat-card-content>
+</mat-card>
