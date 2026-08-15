@@ -1,1 +1,8 @@
-<p>skills-category works!</p>
+ <div class="skills-block">
+    <div class="skills-cat"><span class="num">{{ category.number }}</span>{{ category.label }}</div>
+    <div class="skills-icons">
+    @for (s of category.skills; track s.name) {
+        <app-badge [skill]="s" />
+    }
+    </div>
+</div>
