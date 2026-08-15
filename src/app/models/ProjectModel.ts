@@ -3,4 +3,5 @@ export interface ProjectModel {
     description: string,
     usingTools: string[],
     date: string,
+    url: string,
 }
