@@ -18,5 +18,13 @@ export class PersonalProject {
         'React', 'TypeScript', 'CSS'
       ]
     },
+    {
+      name: 'Java Calculator',
+      description: 'Desktop caculator handling core arithmetic operations, using a stack data structure under the hood and a Java SwingGUI',
+      usingTools: [
+        'Java', 'Swing'
+      ],
+      url: 'https://github.com/GiaKhangCao/Calculator-Project'
+    }
   ]
 }
