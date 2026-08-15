@@ -1,1 +1,17 @@
-<p>experience-card works!</p>
+<div class="tl-item">
+  <div class="tl-date">{{ experience.dateRange }}</div>
+  <div class="tl-node"></div>
+  <div class="tl-card">
+    <div class="tl-head">
+      <div>
+        <div class="tl-role">{{ experience.role }}</div>
+        <div class="tl-org">{{ experience.organization }}</div>
+      </div>
+    </div>
+    <ul class="tl-desc">
+      @for (bullet of experience.bullets; track bullet) {
+        <li>{{ bullet }}</li>
+      }
+    </ul>
+  </div>
+</div>
