@@ -2,8 +2,8 @@
     <h2>Tools</h2>
 
     <div>
-        @for (skillItem of skills; track skillItem.name) {
-            <app-badge [skill] = "skillItem"></app-badge>
+        @for (category of skillCategories; track category.number) {
+            <app-skills-category [category]="category"></app-skills-category>
         }
     </div>
 </section>
