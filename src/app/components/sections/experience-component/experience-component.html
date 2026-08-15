@@ -1,3 +1,9 @@
 <section class="experience-section">
     <h2>Experience</h2>
+
+    <div class="timeline">
+        @for (exp of experiences; track exp.role) {
+            <app-experience-card [experience]="exp" />
+        }
+    </div>
 </section>
