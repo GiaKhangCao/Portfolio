@@ -2,6 +2,8 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Header } from "./components/header/header";
 import { Footer } from "./components/footer/footer";
+import { MatIconRegistry } from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -11,4 +13,16 @@ import { Footer } from "./components/footer/footer";
 })
 export class App {
   protected readonly title = signal('portfolio');
+
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+    const icons: [string, string] [] = [
+      ['Angular', 'E:\Projects\portfolio\src\assets\Angular.svg'],
+      ['Blazor', 'https://github.com/GiaKhangCao/Portfolio/blob/cb3858cf69714f8e7b024a93e9336e870090f9da/src/assets/C.svg'],
+      ['C#', 'src\assets\C# (CSharp).svg'],
+    ]
+
+    icons.forEach(([name, url]) =>
+      iconRegistry.addSvgIcon(name, sanitizer.bypassSecurityTrustResourceUrl(url))
+    );
+  }
 }
