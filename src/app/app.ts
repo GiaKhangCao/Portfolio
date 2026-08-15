@@ -15,10 +15,10 @@ export class App {
   protected readonly title = signal('portfolio');
 
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
-    const icons: [string, string] [] = [
-      ['Angular', 'E:\Projects\portfolio\src\assets\Angular.svg'],
-      ['Blazor', 'https://github.com/GiaKhangCao/Portfolio/blob/cb3858cf69714f8e7b024a93e9336e870090f9da/src/assets/C.svg'],
-      ['C#', 'src\assets\C# (CSharp).svg'],
+    const icons: [string, string][] = [
+      ['Angular', 'assets/Angular.svg'],
+      ['Blazor', 'assets/Blazor.svg'],
+      ['C#', 'assets/C%23%20(CSharp).svg'],
     ]
 
     icons.forEach(([name, url]) =>
