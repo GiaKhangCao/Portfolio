@@ -28,12 +28,12 @@ export class App {
       ['HTML5', 'assets/HTML5.svg'],
       ['Java', 'assets/Java.svg'],
       ['Linux', 'assets/Linux.svg'],
-      ['.NET', 'assets/Net core.svg'],
-      ['PostgreSQL', 'assets/PostgresSQL.svg'],
+      ['.NET', 'assets/NETCore.svg'],
+      ['PostgreSQL', 'assets/PostgreSQL.svg'],
       ['Python', 'assets/Python.svg'],
       ['React', 'assets/React.svg'],
       ['TypeScript', 'assets/TypeScript.svg'],
-      ['VS Code', 'assets/VSCode.svg'],
+      ['VSCode', 'assets/VSCode.svg'],
     ]
 
     icons.forEach(([name, url]) =>
