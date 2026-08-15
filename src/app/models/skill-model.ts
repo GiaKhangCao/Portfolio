@@ -5,7 +5,7 @@ export interface Skill {
 }
 
 export interface SkillCategory {
-    name: string,
+    number: string,
     label: string,
     skills: Skill[],
 }
